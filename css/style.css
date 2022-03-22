@@ -1,0 +1,43 @@
+/* -------------------------------------------DarkMode-------------------------------------*/
+body {
+}
+body.dark {
+  background-color: #111;
+  color: whitesmoke;
+}
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+.label {
+  background-color: #111;
+  display: flex;
+  border-radius: 50px;
+  justify-content: space-between;
+  position: relative;
+  height: 26px;
+  width: 50px;
+}
+
+.ball {
+  background-color: #fff;
+  width: 22px;
+  top: 2px;
+  left: 2px;
+  position: absolute;
+  border-radius: 50%;
+  height: 22px;
+}
+.checkbox:checked + .label .ball {
+  background-color: purple;
+  transform: translateX(24px);
+  transition: transform 0.2s linear;
+}
+.fa-moon {
+  padding: 5px;
+  color: #f1c40f;
+}
+.fa-sun {
+  padding: 5px;
+  color: #f39c12;
+}
